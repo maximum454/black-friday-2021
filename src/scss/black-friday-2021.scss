@@ -1,0 +1,106 @@
+@import "mixin";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+	font-family: 'PT Sans', sans-serif;
+	background-position: top center;
+	background-repeat: repeat;
+	background-size: contain;
+
+	&.lock {
+		overflow: hidden;
+	}
+}
+.page-title,
+.breadcrumb{
+	display: none;
+}
+
+.wrp {
+	overflow: hidden;
+	position: relative;
+	margin-top: -20px;
+}
+
+.container {
+	max-width: 1380px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 26px;
+	color: #fff;
+}
+
+.d-none {
+	display: none!important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+.btn-view-all {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 19px;
+	color: #FD7400;
+	text-decoration: none;
+	position: relative;
+	display: block;
+
+	&:after {
+		content: '';
+		left: 0;
+		bottom: 0;
+		display: block;
+		background-image: url("../img/step_active_underline.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+		width: 88px;
+		height: 5px;
+	}
+}
+
+
+@import "componets/header-banner";
+@import "componets/slider-black-friday-2021";
+
+
