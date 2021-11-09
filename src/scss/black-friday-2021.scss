@@ -72,35 +72,9 @@ p {
 }
 
 
-
-
-.btn-view-all {
-	font-family: PT Sans;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 15px;
-	line-height: 19px;
-	color: #FD7400;
-	text-decoration: none;
-	position: relative;
-	display: block;
-
-	&:after {
-		content: '';
-		left: 0;
-		bottom: 0;
-		display: block;
-		background-image: url("../img/step_active_underline.svg");
-		background-repeat: no-repeat;
-		background-size: 100%;
-		background-position: center;
-		width: 88px;
-		height: 5px;
-	}
-}
-
-
 @import "componets/header-banner";
 @import "componets/slider-black-friday-2021";
+@import "componets/conditions-black-friday-2021";
+@import "componets/all-black-friday-2021";
 
 

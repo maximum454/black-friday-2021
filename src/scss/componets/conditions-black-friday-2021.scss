@@ -1,0 +1,70 @@
+.conditions-black-friday-2021{
+	margin-bottom: 60px;
+	&__body{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+	}
+	&__item{
+		max-width: 545px;
+	}
+	&__date{
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 39px;
+		text-align: center;
+		color: #E84C0A;
+		margin-bottom: 5px;
+		span{
+			color: #fff;
+			font-size: 20px;
+		}
+	}
+	&__name{
+		font-weight: normal;
+		font-size: 30px;
+		line-height: 39px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 5px;
+	}
+	&__discount{
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 26px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 12px;
+		span{
+			font-size: 30px;
+		}
+	}
+	&__btn{
+		margin: 0 auto;
+		width: fit-content;
+		display: block;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		user-select: none;
+		border: 1px solid transparent;
+		padding: .563rem 1.4rem;
+		font-size: 16px;
+		line-height: 21px;
+		cursor: pointer;
+		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		text-decoration: none;
+		background: #FD7400;
+		border-radius: 4px;
+		color: #fff;
+		font-weight: bold;
+		&:focus,
+		&:hover {
+			text-decoration: none;
+			background-color: #fff;
+			border: 1px solid #FD7400;
+			color: #FD7400;
+		}
+	}
+}

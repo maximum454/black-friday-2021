@@ -8,6 +8,7 @@
 		line-height: 49px;
 		text-align: center;
 		margin-bottom: 20px;
+		color: #fff;
 		span{
 			color: #E84C0A;
 		}
@@ -20,12 +21,6 @@
 		background-color: #fff;
 		padding: 10px;
 		text-decoration: none;
-		&:nth-child(odd){
-			transform: rotate(1deg);
-		}
-		&:nth-child(even){
-			transform: rotate(-1deg);
-		}
 		img {
 			max-width: 100%;
 			height: auto;
