@@ -38,7 +38,7 @@ body.lock {
 }
 
 .container {
-  max-width: 1380px;
+  max-width: 1350px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
@@ -176,36 +176,30 @@ p {
   opacity: .5;
 }
 
-.slider-black-friday-2021 .swiper-collection-button-prev {
-  left: -70px;
-  background-image: url("../img/bottom_block_arrow_left_inactive.svg");
-}
-
-.slider-black-friday-2021 .swiper-collection-button-next {
-  right: -70px;
-  background-image: url("../img/bottom_block_arrow_right_inactive.svg");
-}
-
-.slider-black-friday-2021 .swiper-button-next:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  color: #999;
-  background-image: url("../img/swiper-button-next.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 18px;
-}
-
-.slider-black-friday-2021 .swiper-button-prev:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  color: #999;
+.slider-black-friday-2021 .swiper-button-prev {
   background-image: url("../img/swiper-button-prev.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 18px;
+  width: 13px;
+  height: 21px;
+  background-color: #000;
+}
+
+.slider-black-friday-2021 .swiper-button-next {
+  background-image: url("../img/swiper-button-next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 13px;
+  height: 21px;
+  background-color: #000;
+}
+
+.slider-black-friday-2021 .swiper-button-next:after {
+  display: none;
+}
+
+.slider-black-friday-2021 .swiper-button-prev:after {
+  display: none;
 }
 
 .slider-black-friday-2021 .swiper-pagination {
@@ -341,8 +335,10 @@ p {
 
 .all-black-friday-2021__body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-  grid-gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 300px));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .all-black-friday-2021__item {
@@ -350,6 +346,16 @@ p {
   padding: 30px;
   text-decoration: none;
   display: block;
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.all-black-friday-2021__item:hover p {
+  color: #FD7400;
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
 }
 
 .all-black-friday-2021__btn {
@@ -370,11 +376,11 @@ p {
   font-size: 16px;
   line-height: 21px;
   cursor: pointer;
-  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -webkit-transition: all .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,-webkit-box-shadow .3s ease-in-out;
+  transition: all .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,-webkit-box-shadow .3s ease-in-out;
+  -o-transition: all .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out;
+  transition: all .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out;
+  transition: all .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out,-webkit-box-shadow .3s ease-in-out;
   text-decoration: none;
   background-color: #FD7400;
   border-radius: 4px;
@@ -388,6 +394,11 @@ p {
   background-color: #fff;
   border: 1px solid #FD7400;
   color: #FD7400;
+  -webkit-transition: all .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: all .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -o-transition: all .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: all .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: all .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 
 @media only screen and (max-width: 767px) {
@@ -406,5 +417,15 @@ p {
 
   .slider-black-friday-2021__title a {
     display: none;
+  }
+
+  .all-black-friday-2021__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .all-black-friday-2021__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -49,34 +49,28 @@
 	.swiper-button-disabled{
 		opacity: .5;
 	}
-	.swiper-collection-button-prev{
-		left: -70px;
-		background-image: url("../img/bottom_block_arrow_left_inactive.svg");
-	}
-	.swiper-collection-button-next{
-		right: -70px;
-		background-image: url("../img/bottom_block_arrow_right_inactive.svg");
-	}
-
-	.swiper-button-next:after{
-		content: "";
-		width: 100%;
-		height: 100%;
-		color: #999;
-		background-image: url("../img/swiper-button-next.svg");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 18px;
-	}
-	.swiper-button-prev:after {
-		content: "";
-		width: 100%;
-		height: 100%;
-		color: #999;
+	.swiper-button-prev{
 		background-image: url("../img/swiper-button-prev.svg");
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: 18px;
+		width: 13px;
+		height: 21px;
+		background-color: #000;
+	}
+	.swiper-button-next{
+		background-image: url("../img/swiper-button-next.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 13px;
+		height: 21px;
+		background-color: #000;
+	}
+
+	.swiper-button-next:after{
+		display: none;
+	}
+	.swiper-button-prev:after {
+		display: none;
 	}
 
 	.swiper-pagination {

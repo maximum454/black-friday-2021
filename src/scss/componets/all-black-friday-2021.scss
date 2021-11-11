@@ -14,14 +14,19 @@
 	}
 	&__body{
 		display: grid;
-		grid-template-columns: repeat(auto-fit,minmax(200px,300px));
-		grid-gap: 22px;
+		grid-template-columns: repeat(auto-fit,minmax(220px,300px));
+		justify-content: space-between;
 	}
 	&__item{
 		text-align: center;
 		padding: 30px;
 		text-decoration: none;
 		display: block;
+		transition: color .3s ease;
+		&:hover p{
+			color: #FD7400;
+			transition: color .3s ease;
+		}
 	}
 	&__img{
 
@@ -39,7 +44,7 @@
 		font-size: 16px;
 		line-height: 21px;
 		cursor: pointer;
-		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		transition: all .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out;
 		text-decoration: none;
 		background-color: #FD7400;
 		border-radius: 4px;
@@ -51,6 +56,17 @@
 			background-color: #fff;
 			border: 1px solid #FD7400;
 			color: #FD7400;
+			transition: all .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		}
+	}
+	@include r(767){
+		&__title {
+			font-size: 28px;
+			line-height: 32px;
+		}
+		&__body{
+			display: grid;
+			grid-template-columns:1fr 1fr;
 		}
 	}
 }
