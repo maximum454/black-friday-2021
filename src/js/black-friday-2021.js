@@ -2,7 +2,7 @@
 
 $(function () {
     $('#clock').countdown('2021/11/25', function(event) {
-        $(this).html(event.strftime('%D<span>:</span>%H<span>:</span>%M'));
+        $(this).html(event.strftime('<div>%D <div class="sub-slog">дня</div></div><span>:</span><div>%H<div class="sub-slog">часов</div></div><span>:</span><div>%M <div class="sub-slog">минут</div></div>'));
     });
 })
 

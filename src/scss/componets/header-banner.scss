@@ -67,5 +67,69 @@
 			opacity: 0.5;
 			margin: 0 5px;
 		}
+		.sub-slog{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 18px;
+			text-align: center;
+			color: #FFFFFF;
+			opacity: 0.2;
+		}
+	}
+	&__img-mobile{
+		height: 400px;
+		margin: 0 -15px;
+		img{
+			height: 100% !important;
+		}
+	}
+	@include r(767){
+		&__row {
+			display: grid;
+			grid-template-columns: 1fr;
+			align-items: center;
+		}
+		&__img{
+			padding-left: 0;
+			order: 1;
+			text-align: center;
+		}
+		&__count{
+			order: 2;
+		}
+		&__count-block{
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&__arrow{
+			display: block;
+			text-decoration: none;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			margin-top: 20px;
+		}
+		#clock{
+			font-weight: bold;
+			font-size: 60px;
+			line-height: 70px;
+			text-align: center;
+			color: #FFFFFF;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			span{
+				font-style: normal;
+				font-weight: normal;
+				font-size: 50px;
+				line-height: 65px;
+				text-align: center;
+				color: #FFFFFF;
+				opacity: 0.5;
+				margin: 0 5px;
+			}
+		}
 	}
 }

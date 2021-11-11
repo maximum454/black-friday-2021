@@ -169,6 +169,25 @@ p {
   margin: 0 5px;
 }
 
+.header-banner #clock .sub-slog {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+
+.header-banner__img-mobile {
+  height: 400px;
+  margin: 0 -15px;
+}
+
+.header-banner__img-mobile img {
+  height: 100% !important;
+}
+
 .slider-black-friday-2021 {
   margin-bottom: 60px;
   position: relative;
@@ -499,6 +518,71 @@ p {
 
   .d-mobile-none {
     display: none !important;
+  }
+
+  .header-banner__row {
+    display: grid;
+    grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .header-banner__img {
+    padding-left: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: center;
+  }
+
+  .header-banner__count {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .header-banner__count-block {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-banner__arrow {
+    display: block;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .header-banner #clock {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .header-banner #clock span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 65px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 0 5px;
   }
 
   .slider-black-friday-2021__title {
