@@ -16,6 +16,18 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit,minmax(220px,300px));
 		justify-content: space-between;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: -170px;
+			left: 150px;
+			background-image: url("../img/back_element_4.svg");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			width: 46px;
+			height: 51px;
+		}
 	}
 	&__item{
 		text-align: center;
@@ -26,6 +38,14 @@
 		&:hover p{
 			color: #FD7400;
 			transition: color .3s ease;
+		}
+		p{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 23px;
+			text-align: center;
+			color: #fff;
 		}
 	}
 	&__img{
@@ -67,6 +87,12 @@
 		&__body{
 			display: grid;
 			grid-template-columns:1fr 1fr;
+		}
+		&__item{
+			p{
+				font-size: 13px;
+				line-height: 17px;
+			}
 		}
 	}
 }

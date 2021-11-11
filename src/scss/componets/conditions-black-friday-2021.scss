@@ -7,7 +7,7 @@
 		margin-bottom: 40px;
 	}
 	&__item{
-		max-width: 545px;
+		max-width: 42%;
 	}
 	&__date{
 		font-weight: bold;
@@ -37,7 +37,22 @@
 		color: #FFFFFF;
 		margin-bottom: 12px;
 		span{
+			position: relative;
 			font-size: 30px;
+			&:before{
+				content: '';
+				position: absolute;
+				top: -7px;
+				left: -5px;
+				background-image: url("../img/percent_back.png");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 100%;
+				width: 60px;
+				height: 55px;
+			}
+
+
 		}
 	}
 	&__btn{
@@ -65,6 +80,16 @@
 			background-color: #fff;
 			border: 1px solid #FD7400;
 			color: #FD7400;
+		}
+	}
+	@include r(767){
+		&__body{
+			display: block;
+		}
+		&__item{
+			max-width: 100%;
+			text-align: center;
+			margin-bottom: 40px;
 		}
 	}
 }
