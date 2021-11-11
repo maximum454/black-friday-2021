@@ -306,6 +306,20 @@ body.lock {
   display: block;
 }
 
+.slider-black-friday-2021__arrow-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.slider-black-friday-2021__body {
+  margin-top: -60px;
+}
+
+.slider-black-friday-2021 .swiper-black-friday-2021 {
+  padding-top: 60px;
+}
+
 .slider-black-friday-2021 .swiper-wrapper {
   padding: 15px 0;
 }
@@ -356,6 +370,10 @@ body.lock {
   width: 13px;
   height: 21px;
   background-color: #000;
+  top: 0;
+  margin-top: 0;
+  right: 40px;
+  left: auto;
 }
 
 .slider-black-friday-2021 .swiper-button-next {
@@ -365,6 +383,8 @@ body.lock {
   width: 13px;
   height: 21px;
   background-color: #000;
+  top: 0;
+  margin-top: 0;
 }
 
 .slider-black-friday-2021 .swiper-button-next:after {
@@ -690,6 +710,14 @@ body.lock {
   }
 
   .slider-black-friday-2021__title a {
+    display: none;
+  }
+
+  .slider-black-friday-2021 .swiper-button-prev {
+    display: none;
+  }
+
+  .slider-black-friday-2021 .swiper-button-next {
     display: none;
   }
 

@@ -89,6 +89,17 @@
 		opacity: 0.7;
 		display: block;
 	}
+	&__arrow-block{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	&__body{
+		margin-top: -60px;
+	}
+	.swiper-black-friday-2021{
+		padding-top: 60px;
+	}
 	.swiper-wrapper{
 		padding: 15px 0;
 	}
@@ -131,6 +142,10 @@
 		width: 13px;
 		height: 21px;
 		background-color: #000;
+		top: 0;
+		margin-top: 0;
+		right: 40px;
+		left: auto;
 	}
 	.swiper-button-next{
 		background-image: url("../img/swiper-button-next.svg");
@@ -139,6 +154,8 @@
 		width: 13px;
 		height: 21px;
 		background-color: #000;
+		top: 0;
+		margin-top: 0;
 	}
 
 	.swiper-button-next:after{
@@ -171,6 +188,12 @@
 			a {
 				display: none;
 			}
+		}
+		.swiper-button-prev{
+			display: none;
+		}
+		.swiper-button-next{
+			display: none;
 		}
 	}
 }

@@ -13,6 +13,8 @@ $(function () {
 
         $('html, body').animate({scrollTop: dn}, 1000);
     });
+
+
 })
 
 const swiperBlackFriday2021 = new Swiper('.swiper-black-friday-2021', {
@@ -34,6 +36,8 @@ const swiperBlackFriday2021 = new Swiper('.swiper-black-friday-2021', {
         }
     }
 });
+
+
 
 
 
