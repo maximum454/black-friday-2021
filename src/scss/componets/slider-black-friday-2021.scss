@@ -1,6 +1,53 @@
 .slider-black-friday-2021{
 	margin-bottom: 60px;
 	position: relative;
+	&.decor2{
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			background-image: url("../img/back_element_1.svg");
+			background-position: center right;
+			background-size: 22px 44px;
+			background-repeat: no-repeat;
+			height: 44px;
+			width: 100vw;
+			left: 50%;
+			transform: translate(-50%, 0);
+			pointer-events: none;
+		}
+	}
+	&.decor3{
+		&:after{
+			content: '';
+			position: absolute;
+			top: -50px;
+			background-image: url("../img/back_element_2.svg");
+			background-position: center left;
+			background-size: 73px 64px;
+			background-repeat: no-repeat;
+			height: 64px;
+			width: 100vw;
+			left: 50%;
+			transform: translate(-50%, 0);
+			pointer-events: none;
+		}
+	}
+	&.decor4{
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 50px;
+			right: -38px;
+			background-image: url("../img/back_element_3.svg");
+			background-position: center left;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			height: 46px;
+			width: 50px;
+			pointer-events: none;
+		}
+	}
 	&__title {
 		font-style: normal;
 		font-weight: bold;
