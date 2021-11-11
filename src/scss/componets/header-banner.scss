@@ -5,7 +5,7 @@
 
 	}
 	&__img{
-		text-align: center;
+		padding-left: 10px;
 	}
 	&__btn {
 		display: block;
@@ -30,6 +30,11 @@
 		color: #FFFFFF;
 		opacity: 0.5;
 	}
+	&__count-block{
+		width: 394px;
+		margin-left: auto;
+		margin-right: 0;
+	}
 	&__arrow{
 		display: block;
 		text-decoration: none;
@@ -45,7 +50,7 @@
 
 	#clock{
 		font-weight: bold;
-		font-size: 80px;
+		font-size: 103px;
 		line-height: 104px;
 		text-align: center;
 		color: #FFFFFF;

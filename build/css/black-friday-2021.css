@@ -84,7 +84,7 @@ p {
 }
 
 .header-banner__img {
-  text-align: center;
+  padding-left: 10px;
 }
 
 .header-banner__btn {
@@ -120,6 +120,12 @@ p {
   opacity: 0.5;
 }
 
+.header-banner__count-block {
+  width: 394px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
 .header-banner__arrow {
   display: block;
   text-decoration: none;
@@ -137,7 +143,7 @@ p {
 
 .header-banner #clock {
   font-weight: bold;
-  font-size: 80px;
+  font-size: 103px;
   line-height: 104px;
   text-align: center;
   color: #FFFFFF;
