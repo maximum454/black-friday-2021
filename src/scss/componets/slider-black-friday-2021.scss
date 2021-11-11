@@ -1,6 +1,22 @@
 .slider-black-friday-2021{
 	margin-bottom: 60px;
 	position: relative;
+	&.decor1{
+		&:after{
+			content: '';
+			position: absolute;
+			top: 8px;
+			background-image: url("../img/all_hits_back.svg");
+			background-position: center right;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			height: 100%;
+			width: 104%;
+			left: -30px;
+			pointer-events: none;
+			z-index: -1;
+		}
+	}
 	&.decor2{
 		&:after{
 			content: '';
@@ -60,7 +76,19 @@
 			color: #E84C0A;
 		}
 	}
-
+	&__link{
+		position: absolute;
+		bottom: 30px;
+		right: 0;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 17px;
+		text-align: center;
+		text-decoration-line: underline;
+		color: #FFFFFF;
+		opacity: 0.7;
+		display: block;
+	}
 	.swiper-wrapper{
 		padding: 15px 0;
 	}

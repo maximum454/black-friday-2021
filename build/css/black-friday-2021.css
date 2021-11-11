@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #000 !important;
   font-family: 'PT Sans', sans-serif;
   background-position: top center;
   background-repeat: repeat;
@@ -31,10 +31,23 @@ body.lock {
   display: none;
 }
 
-.wrp {
+.main {
   overflow: hidden;
+}
+
+.wrp {
   position: relative;
   margin-top: -20px;
+}
+
+.wrp p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.wrp .modal p {
+  color: #000;
 }
 
 .container {
@@ -43,12 +56,6 @@ body.lock {
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-}
-
-p {
-  font-size: 18px;
-  line-height: 26px;
-  color: #fff;
 }
 
 .d-none {
@@ -207,6 +214,21 @@ p {
   position: relative;
 }
 
+.slider-black-friday-2021.decor1:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  background-image: url("../img/all_hits_back.svg");
+  background-position: center right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 104%;
+  left: -30px;
+  pointer-events: none;
+  z-index: -1;
+}
+
 .slider-black-friday-2021.decor2:after {
   content: '';
   position: absolute;
@@ -267,6 +289,21 @@ p {
 
 .slider-black-friday-2021__title span {
   color: #E84C0A;
+}
+
+.slider-black-friday-2021__link {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #FFFFFF;
+  opacity: 0.7;
+  display: block;
 }
 
 .slider-black-friday-2021 .swiper-wrapper {
