@@ -79,15 +79,11 @@ p {
 }
 
 .header-banner {
-  background-image: url("../img/main_banner.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   padding: 20px 0;
   margin-bottom: 60px;
 }
 
-.header-banner__logo {
+.header-banner__img {
   text-align: center;
 }
 
@@ -107,11 +103,64 @@ p {
   transition: all .3s ease;
 }
 
+.header-banner__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-banner__name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.header-banner__arrow {
+  display: block;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+
 .header-banner img {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
   height: auto;
+}
+
+.header-banner #clock {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 104px;
+  text-align: center;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-banner #clock span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 65px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin: 0 5px;
 }
 
 .slider-black-friday-2021 {
