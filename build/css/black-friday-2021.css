@@ -328,6 +328,7 @@ body.lock {
   background-color: #fff;
   padding: 10px;
   text-decoration: none;
+  height: auto;
 }
 
 .slider-black-friday-2021 .swiper-slide img {
