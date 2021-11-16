@@ -88,6 +88,7 @@
 		color: #FFFFFF;
 		opacity: 0.7;
 		display: block;
+		z-index: 1;
 	}
 	&__arrow-block{
 		position: absolute;
@@ -121,7 +122,7 @@
 			margin: 0;
 		}
 	}
-	.catalog-card__header{
+	.black_friday_label {
 		position: relative;
 		&:before{
 			content: '';

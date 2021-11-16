@@ -302,6 +302,7 @@ body.lock {
   color: #FFFFFF;
   opacity: 0.7;
   display: block;
+  z-index: 1;
 }
 
 .slider-black-friday-2021__arrow-block {
@@ -343,11 +344,11 @@ body.lock {
   margin: 0;
 }
 
-.slider-black-friday-2021 .catalog-card__header {
+.slider-black-friday-2021 .black_friday_label {
   position: relative;
 }
 
-.slider-black-friday-2021 .catalog-card__header:before {
+.slider-black-friday-2021 .black_friday_label:before {
   content: '';
   position: absolute;
   top: 0;
