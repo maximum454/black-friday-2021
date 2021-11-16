@@ -108,6 +108,7 @@
 		padding: 10px;
 		text-decoration: none;
 		height: auto;
+
 		img {
 			max-width: 100%;
 			height: auto;
@@ -118,6 +119,23 @@
 			line-height: 23px;
 			color: #000;
 			margin: 0;
+		}
+	}
+	.catalog-card__header{
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, 0);
+			background-image: url("../img/label-black-friday.svg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+			width: 93px;
+			height: 43px;
+			z-index: 2;
 		}
 	}
 
@@ -189,6 +207,19 @@
 			a {
 				display: none;
 			}
+		}
+		&__link{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			font-weight: bold;
+			font-size: 13px;
+			line-height: 17px;
+			text-align: center;
+			text-decoration-line: underline;
+			color: #FFFFFF;
+			opacity: 0.7;
+			display: block;
 		}
 		.swiper-button-prev{
 			display: none;

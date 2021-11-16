@@ -5,11 +5,7 @@
 }
 
 body {
-	background-color: #000!important;
-	font-family: 'PT Sans', sans-serif;
-	background-position: top center;
-	background-repeat: repeat;
-	background-size: contain;
+
 
 	&.lock {
 		overflow: hidden;
@@ -19,8 +15,15 @@ body {
 .breadcrumb{
 	display: none;
 }
+
 .main{
+	background-color: #000!important;
+	font-family: 'PT Sans', sans-serif;
+	background-position: top center;
+	background-repeat: repeat;
+	background-size: contain;
 	overflow: hidden;
+	margin-top: 10px;
 }
 .wrp {
 	position: relative;

@@ -14,7 +14,7 @@ $(function () {
         $('html, body').animate({scrollTop: dn}, 1000);
     });
 
-
+    $('.wrp').parent('.container').css({'max-width':'100%', 'padding':'0'});
 })
 
 const swiperBlackFriday2021 = new Swiper('.swiper-black-friday-2021', {
