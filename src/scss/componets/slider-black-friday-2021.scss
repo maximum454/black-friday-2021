@@ -122,12 +122,12 @@
 			margin: 0;
 		}
 	}
-	.black_friday_label {
+	.catalog-card__header{
 		position: relative;
 		&:before{
 			content: '';
 			position: absolute;
-			top: 0;
+			top: 5px;
 			left: 50%;
 			transform: translate(-50%, 0);
 			background-image: url("../img/label-black-friday.svg");
@@ -138,6 +138,9 @@
 			height: 43px;
 			z-index: 2;
 		}
+	}
+	.black_friday_label {
+
 	}
 
 	.swiper-collection-button-prev,

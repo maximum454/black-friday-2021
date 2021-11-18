@@ -344,14 +344,14 @@ body.lock {
   margin: 0;
 }
 
-.slider-black-friday-2021 .black_friday_label {
+.slider-black-friday-2021 .catalog-card__header {
   position: relative;
 }
 
-.slider-black-friday-2021 .black_friday_label:before {
+.slider-black-friday-2021 .catalog-card__header:before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
